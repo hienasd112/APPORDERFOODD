@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFDE7"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="🍽️ Danh sách món ăn"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnGioHang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🛒 Xem Giỏ Hàng"
+        android:backgroundTint="#03A9F4"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="12dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerMonAnMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

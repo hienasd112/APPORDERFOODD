@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_margin="8dp"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:padding="10dp"
+    android:background="@drawable/bg_ban_tron"
+    android:elevation="4dp">
+
+    <TextView
+        android:id="@+id/txtSoBan"
+        android:text="Bàn 1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txtTrangThai"
+        android:text="Trống"
+        android:textSize="14sp"
+        android:textColor="#FFEB3B"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

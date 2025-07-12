@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:background="#FAFAFA">
+
+    <EditText
+        android:id="@+id/edtTenMon"
+        android:hint="Nhập tên món ăn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:background="@android:drawable/edit_text"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edtGiaMon"
+        android:hint="Nhập giá món"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:background="@android:drawable/edit_text"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edtHinhMon"
+        android:hint="Tên ảnh trong drawable"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:background="@android:drawable/edit_text"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnCapNhatMon"
+        android:text="✏️ Cập nhật món"
+        android:textAllCaps="false"
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF9800"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnXoaMon"
+        android:text="🗑️ Xoá món"
+        android:textAllCaps="false"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F44336"
+        android:textColor="#FFFFFF" />
+</LinearLayout>

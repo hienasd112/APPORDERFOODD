@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFF8F0">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🛒 Giỏ hàng của bạn"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:gravity="center"
+        android:layout_marginBottom="8dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerGioHang"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/txtTongTien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tổng: 0 VNĐ"
+        android:textSize="18sp"
+        android:textColor="#FF5722"
+        android:gravity="end"
+        android:layout_marginTop="8dp"
+        android:padding="8dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp">
+
+        <Button
+            android:id="@+id/btnQuayLai"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="⬅️ Quay lại"
+            android:backgroundTint="#E0E0E0"
+            android:textColor="#000000"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/btnThanhToan"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="💳 Thanh toán"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="4dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnGoiMon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📥 Gọi món"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#03A9F4"
+        android:textColor="#FFFFFF"/>
+</LinearLayout>

@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#E3F2FD">
+
+    <Button
+        android:id="@+id/btnMonAn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🍛 Quản lý món ăn"
+        android:backgroundTint="#03A9F4"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/btnNhanVien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="👩‍🍳 Quản lý nhân viên"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/btnDonHang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📦 Xem đơn hàng"
+        android:backgroundTint="#FF9800"
+        android:textColor="#FFFFFF" />
+
+    <LinearLayout
+        android:id="@+id/layoutThongKe"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginTop="24dp"
+        android:background="#FFFFFF"
+        android:elevation="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="📊 Thống kê doanh thu"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_marginBottom="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/edtNgayThongKe"
+            android:hint="Nhập ngày (yyyy-MM-dd)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_background"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/btnThongKeNgay"
+            android:text="🗓️ Thống kê theo ngày"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#9C27B0"
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/edtThangThongKe"
+            android:hint="Nhập tháng (yyyy-MM)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_background"
+            android:padding="8dp"
+            android:layout_marginTop="12dp"/>
+
+        <Button
+            android:id="@+id/btnThongKeThang"
+            android:text="📅 Thống kê theo tháng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3F51B5"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/txtKetQuaThongKe"
+            android:text="Kết quả: "
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
